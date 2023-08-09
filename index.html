@@ -110,6 +110,87 @@
 </div>
 </div>
 
+<!-- copindo o carrossel e o card -->
+
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Mais Vendido</h2>
+
+    <div class="swiper">
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper1 = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    },
+    });
+</script>
+
+<div class="card">
+
+<div class="card_descrição">
+    <div class="descrição">
+    <img class="estrelinhas" src="img/Estrelinhas.svg" alt="Cinco estrelas">
+        <h3 class="descrição_titulo">Autora do Mês</h3>
+        <h2 class="descrição_titulo-livro">Juliana Agarikov</h2>
+        <p class="descrição_texto">Analisa de sistemas e escritora, Julina é especialita em Front-end.</p>
+    </div>
+    <img src="img/Juliana Agarikov.svg" class="descrição_imagem">
+</div>
+
+<div class="card_botões">
+    <ul class="botões">
+        <li class="botões_item"> <img src="img/Favoritos.svg" alt="Favoritar"></li>
+        <li class="botões_item"> <img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+    </ul>
+<a href="#" class="botões_ancora">Saiba mais</a>
+</div>
+</div>
+
+<!-- section topicos -->
+
+<section class="tópicos">
+   <h2 class="tópico_titulo">TÓPICO VISITADO RECETEMENTE</h2>
+   <ul class="tópicos_lista">
+       <li class="tópicos_item">
+        <a href="#" class="tópicos_link">Android</a>
+       </li>
+       <li class="tópicos_item">
+        <a href="#" class="tópicos_link">Marketing Digital</a>
+       </li>
+       <li class="tópicos_item">
+        <a href="#" class="tópicos_link">Agile</a>
+       </li>
+       <li class="tópicos_item">
+        <a href="#" class="tópicos_link">Startups</a>
+       </li>
+       <li class="tópicos_item">
+        <a href="#" class="tópicos_link">HTML e SSS</a>
+       </li>
+
+</section>
+
 </script>
 </body>
 </html>
